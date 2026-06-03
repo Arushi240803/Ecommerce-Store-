@@ -49,7 +49,7 @@ This project includes user authentication, product listing, shopping cart functi
 
 ## Clone Repository
 
-git clone https://github.com/yourusername/ecommerce-store-mern.git
+git clone https://github.com/Arushi240803/Ecommerce-Store-.git
 
 ---
 
