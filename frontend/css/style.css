@@ -573,16 +573,33 @@ body {
    AUTH PAGES
 ========================= */
 
+/* =========================
+   AUTH PAGES
+========================= */
+
 .auth-container {
   height: 100vh;
 
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
+/* LEFT IMAGE SIDE */
+
+.auth-image {
+  width: 50%;
+}
+
+.auth-image img {
+  width: 100%;
+  height: 100vh;
+
+  object-fit: cover;
+}
+
+/* RIGHT FORM SIDE */
+
 .auth-form {
-  width: 380px;
+  width: 420px;
 
   background: white;
 
@@ -598,7 +615,11 @@ body {
   gap: 18px;
 
   animation: fadeIn 0.4s ease;
+
+  margin: auto;
 }
+
+/* FORM HEADING */
 
 .auth-form h1 {
   text-align: center;
@@ -607,10 +628,14 @@ body {
   font-size: 36px;
 }
 
+/* SUBTITLE */
+
 .auth-subtitle {
   text-align: center;
   color: gray;
 }
+
+/* INPUTS */
 
 .auth-form input {
   padding: 14px;
@@ -630,6 +655,8 @@ body {
 
   box-shadow: 0 0 0 3px rgba(139,0,139,0.12);
 }
+
+/* BUTTON */
 
 .auth-form button {
   padding: 14px;
@@ -657,6 +684,8 @@ body {
   transform: scale(1.03);
 }
 
+/* LOGIN/REGISTER LINK */
+
 .auth-switch {
   text-align: center;
 }
@@ -667,6 +696,24 @@ body {
   text-decoration: none;
 }
 
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+  .auth-container {
+    flex-direction: column;
+  }
+
+  .auth-image {
+    display: none;
+  }
+
+  .auth-form {
+    width: 90%;
+  }
+}
 /* =========================
    PRODUCT DETAILS PAGE
 ========================= */
